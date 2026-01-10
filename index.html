@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="WDD 231 | Web Frontend Development. Robbie Yamashita's course homepage featuring a portfolio of projects and assignments.">
+  <title>WDD 231 | Web Frontend Development | Robbie Yamashita</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+
+      <div class="logo-section">
+        <img src="images/site-logo.svg" alt="Site Logo" loading="lazy">
+        <span class="site-name">Robbie Yamashita</span>
+      </div>
+
+      <button class="hamburger"></button>
+    </div>
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="profile">
+      <h2>About Me</h2>
+
+      <div class="profile-content">
+        <img src="images/profile.jpg" alt="Picture of Robbie Yamashita, the author of this site" class="profile-img">
+        <div class="profile-text">
+          <p>Hello, World! My name is Robbie Yamashita. I'm currently a Software Engineering student, passionate about computers, software and cyber security!</p>
+          <p>I'm currently taking a web development class, on track and working towards my first certificate. This will serve as my portfolio, showcasing my journey to the Web and Computer Programming certificate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filter-buttons">
+        <button id="ALL-courses-btn" class="filter-btn active">All Courses</button>
+        <button id="WDD-courses-btn" class="filter-btn">WDD Courses</button>
+        <button id="CSE-courses-btn" class="filter-btn">CSE Courses</button>
+      </div>
+
+      <div id="courses" class="course-grid"></div>
+      <p class="credits-total">Total Credits Required: <span id="totalCredits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/rpathway" target="_blank">
+        <img src="images/github-ico.svg" alt="Github Logo" loading="lazy">
+      </a>
+      <a href="https://linkedin.com/" target="_blank">
+        <img src="images/linkedin-ico.svg" alt="LinkedIn Logo" loading="lazy">
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <img src="images/twitter-ico.svg" alt="Twitter Logo" loading="lazy">
+      </a>
+    </div>
+
+    <p class="copyright">©️ <span id="currentyear"></span> | <span class="author-name">Robbie Yamashita</span> | Canada, Ontario</p>
+    <p class="last-modified">Last Modified: <span id="lastModified" ></span></p>
+  </footer>
+</body>
+</html>
