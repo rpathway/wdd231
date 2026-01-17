@@ -1,7 +1,7 @@
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
   --primary-color: #003d7a;
-  --secondary-color: #00aeef;
+  --secondary-color: #00bbff;
   --card-bg: #f8f9fa;
   
   --rounded: 10px;
