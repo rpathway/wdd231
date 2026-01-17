@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toronto Chamber of Commerce Business Directory | Connect with local chamber member businesses across Toronto.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <meta property="og:title" content="Toronto Chamber of Commerce | Business Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rpathway.github.io/wdd231/chamber/images/chamber-logo.jpg">
+  <meta property="og:url" content="https://rpathway.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Discover Toronto Chamber of Commerce member businesses. Browse the directory of local companies and organizations.">
+
+  <title>Business Directory | Toronto Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+
+    <div class="logo">
+      <img src="images/chamber-logo.jpg" alt="Toronto Chamber of Commerce Logo">
+      <span>Toronto Chamber of Commerce</span>
+    </div>
+
+    <nav id="mainNav">
+      <button id="menuButton" aria-label="Mobile navigation menu button">☰</button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <div class="directory-controls">
+      <div class="view-toggle">
+        <button id="gridViewBtn" class="view-btn active" aria-label="Directory grid view button">
+          <span class="grid-icon">⊞</span>
+        </button>
+
+        <button id="listViewBtn" class="view-btn" aria-label="Directory list view button">
+          <span class="list-icon">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="directory" class="grid-view">
+      <!-- Dynamically Loaded -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Toronto Chamber of Commerce</h3>
+        <p>55 University Ave</p>
+        <p>Toronto, ON M5J 2H7</p>
+        <p>Phone: (416) 868-6415</p>
+        <p>Email: info@chamber.ca</p>
+      </div>
+
+      <div class="footer-info">
+        <p class="student-name">Robbie Yamashita</p>
+        <p class="project-name">WDD 231 Chamber of Commerce project</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©️ <span id="currentYear"></span> Toronto Chamber of Commerce</p>
+    </div>
+  </footer>
+</body>
+</html>

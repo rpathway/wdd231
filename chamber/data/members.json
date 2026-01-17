@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Balzac's Coffee Roasters",
+    "address": "1 Trinity St, Toronto, ON M5A 3C4, Canada",
+    "phone": "416-207-1709",
+    "website": "https://balzacs.com/",
+    "image": "balzacs-coffee.jpg",
+    "membershipLevel": 3,
+    "category": "Restaurant & Food",
+    "description": "Balzac's cafés have garnered quite the loyal following proves that providing a place for people to drink excellent coffee in the authentic French tradition has an appeal that can only be described as everlasting.",
+    "erected": 2002
+  },
+  {
+    "name": "Bay Street Tech",
+    "address": "157 Princess Avenue, Toronto, ON M2N 3R8, Canada",
+    "phone": "647-977-9990",
+    "website": "https://baystreettech.com/",
+    "image": "baystreet-tech.jpg",
+    "membershipLevel": 3,
+    "category": "Technology",
+    "description": "With years of industry experience in delivering cutting-edge FinTech solutions, Bay Street Tech is a trusted partner for businesses in the Financial Services sector.",
+    "erected": 2016
+  },
+  {
+    "name": "Black Market Vintage",
+    "address": "256 Queen St West, Toronto, ON M5T 2X9, Canada",
+    "phone": "416-599-5656",
+    "website": "https://blackmarkettoronto.com/",
+    "image": "blackmarket.jpg",
+    "membershipLevel": 1,
+    "category": "Retail & Shopping",
+    "description": "Downtown Toronto's original large format secondhand vintage clothing store.",
+    "erected": 1980
+  },
+  {
+    "name": "Fairmont Royal York",
+    "address": "100 Front Street West, Toronto, ON M5J 1E3, Canada",
+    "phone": "416-368-2511",
+    "website": "https://www.fairmont.com",
+    "image": "fairmont.jpg",
+    "membershipLevel": 3,
+    "category": "Hospitality & Tourism",
+    "description": "A stately landmark since its opening in 1929, the most luxurious hotel in Toronto is the gateway to your essential Toronto experience.",
+    "erected": 1929
+  },
+  {
+    "name": "Hoi Bo",
+    "address": "55 Mill St, Toronto, ON M5A 3C4, Canada",
+    "phone": "647-852-5488",
+    "website": "https://hoibo.com/",
+    "image": "hoibo.jpg",
+    "membershipLevel": 2,
+    "category": "Retail & Shopping",
+    "description": "Hoi Bo is wearable, natural beauty. Pure and simple. Soft and strong. We make everything ourselves. But it belongs to you – to wear, to use, for days, for years.",
+    "erected": 2023
+  },
+  {
+    "name": "TD Bank - King Street",
+    "address": "55 King St West, Toronto, ON M5K 1A2, Canada",
+    "phone": "416-982-2322",
+    "website": "https://td.com",
+    "image": "td-bank.jpg",
+    "membershipLevel": 3,
+    "category": "Finance & Banking",
+    "description": "TD Bank offers a range of financial services, including asset management, wealth management, and investment brokerage.",
+    "erected": 1872
+  },
+  {
+    "name": "Toronto Public Library Foundation",
+    "address": "789 Yonge St, Toronto, ON M4W 2G8, Canada",
+    "phone": "416-393-7123",
+    "website": "https://tplfoundation.ca/",
+    "image": "library-foundation.jpg",
+    "membershipLevel": 1,
+    "category": "Education",
+    "description": "The Toronto Public Library Foundation is a fundraising organization that enhances the Toronto Public Library’s aspirations to be a world’s leading library, making us all more resilient, more knowledgeable, more connected and more successful.",
+    "erected": 1997
+  },
+  {
+    "name": "Exile Vintage",
+    "address": "60 Kensington Ave, Toronto, ON M5T 2K1, Canada",
+    "phone": "416-595-7199",
+    "website": "https://www.exilevintage.ca/",
+    "image": "exile-vintage.jpg",
+    "membershipLevel": 2,
+    "category": "Shopping & Retail",
+    "description": "Exile Vintage is a well-established store that has been a cornerstone in the vintage clothing industry for over 45 years. Specializing in offering high-quality vintage apparel.",
+    "erected": 1976
+  }
+]
