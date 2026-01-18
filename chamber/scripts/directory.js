@@ -59,7 +59,7 @@ function createMemberCard(member) {
 
   card.innerHTML = `
     <div class="member-header">
-      <img src="images/${member.image}" alt="${member.name} logo" class="member-logo">
+      <img src="images/${member.image}" alt="${member.name} logo" class="member-logo" loading="lazy">
       <div class="member-info">
         <h2>${member.name}</h2>
         <span class="membership-badge ${badgeClass}">${badgeText}</span>
