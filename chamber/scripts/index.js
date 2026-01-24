@@ -47,7 +47,6 @@ async function loadWeather() {
     displayWeather(currentData, forecastData);
 
   } catch (error) {
-    console.error('Error loading weather:', error);
     displayDefaultWeather();
   }
 }
@@ -191,7 +190,6 @@ async function loadSpotlights() {
     displaySpotlights(selectedMembers);
     
   } catch (error) {
-    console.error('Error loading spotlights:', error);
     document.getElementById('spotlightsContainer').innerHTML = '<p>Unable to load member spotlights.</p>';
   }
 }
