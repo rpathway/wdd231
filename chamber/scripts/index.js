@@ -221,6 +221,7 @@ function displaySpotlights(members) {
 document.addEventListener('DOMContentLoaded', async () => {
   initFooter();
   initNavigation();
-  await loadWeather();
+  // await loadWeather();
+  displayDefaultWeather();
   await loadSpotlights();
 });
