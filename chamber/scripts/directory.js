@@ -54,8 +54,7 @@ function createMemberCard(member) {
   const card = document.createElement('div');
   card.className = 'member-card';
 
-  const badgeClass = membershipInfo[member.membershipLevel][0];
-  const badgeText = membershipInfo[member.membershipLevel][1];
+  const [badgeClass, badgeText] = membershipInfo[member.membershipLevel];
 
   card.innerHTML = `
     <div class="member-header">

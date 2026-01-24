@@ -65,7 +65,7 @@
     gap: 0.5rem;
   }
 
-  .grid-view {
+  .grid-view, .home-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -96,8 +96,23 @@
   }
 }
 
-@media (min-width: 80rem) {
-  .grid-view {
-    grid-template-columns: repeat(4, 1fr);
+@media screen and (min-width: 40rem) {
+  .hero {
+    height: 500px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
   }
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toronto Chamber of Commerce | Supporting business growth and economic development in Toronto. Join our community of local businesses.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <meta property="og:title" content="Toronto Chamber of Commerce | Home">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rpathway.github.io/wdd231/chamber/images/chamber-logo-large.svg">
+  <meta property="og:image:alt" content="Toronto Chamber of Commerce site logo">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:url" content="https://rpathway.github.io/wdd231/chamber/index.html">
+  <meta property="og:description" content="Supporting business growth and economic development in Toronto. Connect with local businesses and join our chamber community.">
+
+  <title>Toronto Chamber of Commerce | Home</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/chamber-logo.jpg" alt="Toronto Chamber of Commerce Logo" loading="lazy">
+      <span>Toronto Chamber of Commerce</span>
+    </div>
+
+    <nav id="mainNav">
+      <button id="menuButton" aria-label="Mobile navigation menu button">☰</button>
+      <ul class="navigation">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Toronto Chamber of Commerce</h1>
+        <p>Building Business, Building Community</p>
+        <a href="join.html" class="join-btn">Join the Chamber</a>
+      </div>
+      <img src="images/toronto-skyline.webp" alt="Skyline image of the city of Toronto" loading="lazy">
+    </section>
+
+    <div class="home-grid">
+      <section class="home-section">
+        <h2>Current Events</h2>
+        <div class="event-item">
+          <p class="event-date">February 6 - 28, 2026</p>
+          <p><strong>Skates and Sounds</strong></p>
+          <p>College Park | 4PM - 8PM</p>
+        </div>
+
+        <div class="event-item">
+          <p class="event-date">February 16 - March 27, 2026</p>
+          <p><strong>Lumière: The Art of Light</strong></p>
+          <p>Trillium Park | 6PM - 11PM</p>
+        </div>
+
+        <div class="event-item">
+          <p class="event-date">December 23, 2025 - March 22, 2026</p>
+          <p><strong>Sharks at ROM</strong></p>
+          <p>Royal Ontario Museum | 10AM - 5:30PM</p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <h2>Toronto Weather</h2>
+        
+        <div class="weather-current">
+          <div class="weather-icon" id="weatherIcon">☁️</div>
+          <div>
+            <div class="weather-temp" id="currentTemp"></div>
+            <div id="weatherDesc"></div>
+          </div>
+        </div>
+        <div id="weatherDetails"></div>
+      </section>
+
+      <section class="home-section">
+        <h2>Weather Forcast</h2>
+        <div class="weather-forecast" id="forecastContainer">
+          <!-- Dynamically Loaded -->
+        </div>
+      </section>
+
+      <section class="home-section spotlights-section">
+        <h2>Member Spotlights</h2>
+        <div class="spotlights-grid" id="spotlightsContainer">
+          <!-- Dynamically Loaded -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h2>Toronto Chamber of Commerce</h2>
+        <p>55 University Ave</p>
+        <p>Toronto, ON M5J 2H7</p>
+        <p>Phone: (416) 868-6415</p>
+        <p>Email: info@chamber.ca</p>
+      </div>
+
+      <div class="footer-info">
+        <p class="student-name">Robbie Yamashita</p>
+        <p class="project-name">WDD 231 Chamber of Commerce project</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©️ <span id="currentYear"></span> Toronto Chamber of Commerce</p>
+    </div>
+  </footer>
+</body>
+</html>
