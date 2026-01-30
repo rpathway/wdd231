@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you page for joining the Toronto Chamber of Commerce. Your application has been received.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <title>Application Received | Toronto Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/thankyou.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/chamber-logo.jpg" alt="Toronto Chamber of Commerce Logo" loading="lazy">
+      <span>Toronto Chamber of Commerce</span>
+    </div>
+
+    <nav id="mainNav">
+      <button id="menuButton" aria-label="Mobile navigation menu button">☰</button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="thankyou-container">
+      <div class="success-icon">✓</div>
+      <h1>Application Received!</h1>
+      <p class="thankyou-message">Thank you for applying to join the Toronto Chamber of Commerce! We have received your application and will review it shortly.</p>
+
+      <section class="application-details">
+        <h2>Application Summary</h2>
+        <div>
+          <h3>Application Date:</h3>
+          <p id="displayTimestamp"></p>
+          <h3>First Name:</h3>
+          <p id="displayFirstName"></p>
+          <h3>Last Name:</h3>
+          <p id="displayLastName"></p>
+          <h3>Email:</h3>
+          <p id="displayEmail"></p>
+          <h3>Mobile Phone:</h3>
+          <p id="displayMobile"></p>
+          <h3>Business Name:</h3>
+          <p id="displayBusinessName"></p>
+        </div>
+      </section>
+
+      <strong><i>For corrections, please include the application date and business name when contacting us by email.</i></strong>
+      <section class="next-steps">
+        <h2>What Happens Next?</h2>
+        <ol>
+          <li>Our membership team will review your application within 3-5 business days.</li>
+          <li>You will receive a confirmation email at the address you provided.</li>
+          <li>Once approved, you'll receive your membership welcome package and login credentials.</li>
+          <li>Start enjoying your membership benefits immediately!</li>
+        </ol>
+      </section>
+
+      <div class="action-buttons">
+        <a href="index.html" class="btn-primary">Return Home</a>
+        <a href="directory.html" class="btn-secondary">Browse Directory</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h2>Toronto Chamber of Commerce</h2>
+        <p>55 University Ave</p>
+        <p>Toronto, ON M5J 2H7</p>
+        <p>Phone: (416) 868-6415</p>
+        <p>Email: info@chamber.ca</p>
+      </div>
+
+      <div class="footer-info">
+        <p class="student-name">Robbie Yamashita</p>
+        <p class="project-name">WDD 231 Chamber of Commerce project</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©️ <span id="currentYear"></span> Toronto Chamber of Commerce</p>
+    </div>
+  </footer>
+</body>
+</html>

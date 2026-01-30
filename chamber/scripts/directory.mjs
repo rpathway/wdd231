@@ -1,3 +1,5 @@
+import { initCommon } from "./common.mjs";
+
 let members = [];
 let isLoading = false;
 
@@ -99,39 +101,8 @@ function initViewToggle() {
   }
 }
 
-function initNavigation() {
-  const menuButton = document.getElementById('menuButton');
-  const navigation = document.querySelector('.navigation');
-
-  if (menuButton && navigation) {
-    menuButton.addEventListener('click', () => {
-      navigation.classList.toggle('open');
-
-      if (navigation.classList.contains('open')) {
-        menuButton.textContent = '✕';
-
-      } else {
-        menuButton.textContent = '☰';
-      }
-    });
-  }
-}
-
-function initFooter() {
-  const yearElement = document.getElementById('currentYear');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-
-  const modifiedElement = document.getElementById('lastModified');
-  if (modifiedElement) {
-    modifiedElement.textContent = document.lastModified;
-  }
-}
-
 async function init() {
-  initFooter();
-  initNavigation();
+  initCommon();
   initViewToggle();
   
   if (!isLoading && members.length === 0) {

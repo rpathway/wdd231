@@ -22,7 +22,6 @@
     padding: 0.75rem 1.5rem;
 
     border-bottom: none;
-    border-radius: var(--rounded);
   }
 
   main {
@@ -46,6 +45,19 @@
   
   .list-view .member-card {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .application-details div {
+    grid-template-columns: 200px 1fr;
   }
 }
 
@@ -91,28 +103,26 @@
     gap: 0.5rem;
   }
 
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 40rem) {
-  .hero {
-    height: 500px;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-}
-
-@media (min-width: 64rem) {
   .hero {
     height: 600px;
   }
 
   .hero h1 {
     font-size: 3.5rem;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .join-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .membership-cards {
+    position: sticky;
+    top: 2rem;
+
+    align-self: start;
   }
 }

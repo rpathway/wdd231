@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Toronto Chamber of Commerce | Membership application and benefits for businesses in Toronto.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <meta property="og:title" content="Join the Toronto Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rpathway.github.io/wdd231/chamber/images/chamber-logo-large.svg">
+  <meta property="og:image:alt" content="Toronto Chamber of Commerce site logo">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:url" content="https://rpathway.github.io/wdd231/chamber/join.html">
+  <meta property="og:description" content="Join the Toronto Chamber of Commerce and connect with Toronto's business community. Choose from four membership levels.">
+
+  <title>Join Us | Toronto Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/join.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/chamber-logo.jpg" alt="Toronto Chamber of Commerce Logo" loading="lazy">
+      <span>Toronto Chamber of Commerce</span>
+    </div>
+
+    <nav id="mainNav">
+      <button id="menuButton" aria-label="Mobile navigation menu button">☰</button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-container">
+      <section class="form-section">
+        <h2>Membership Application</h2>
+
+        <form id="membershipForm" method="get" action="thankyou.html">
+          <label for="firstName">First Name *
+            <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+          <label for="lastName">Last Name *
+            <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+          <label for="email">Email Address *
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+          </label>
+          <label for="mobile">Mobile Phone Number *
+            <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
+          <label for="orgTitle">Organization Title
+            <input type="text" id="orgTitle" name="orgTitle" title="Enter your title (minimum 7 characters, letters, hyphens, and spaces only)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+          </label>
+          <label for="businessName">Business/Organization Name *
+            <input type="text" id="businessName" name="businessName" title="Enter your business or organization name" autocomplete="organization" required>
+          </label>
+          <fieldset>
+            <legend>Membership Level *</legend>
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="np" required>
+              NP Membership (Non-Profit - No Fee)
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="bronze">
+              Bronze Membership
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="silver">
+              Silver Membership
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label for="businessDesc">Business/Organization Description
+            <textarea id="businessDesc" name="businessDesc" title="Describe your business or organization" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button type="submit" aria-label="Submit applciation button">Submit Application</button>
+        </form>
+      </section>
+
+      <section class="membership-cards">
+        <h2>Membership Levels</h2>
+
+        <div class="card np-card">
+          <h3>NP Membership</h3>
+          <p class="price">Free</p>
+          <p>For Non-Profit Organizations</p>
+          <button class="learn-more" data-modal="npModal">Learn More</button>
+        </div>
+
+        <div class="card bronze-card">
+          <h3>Bronze Membership</h3>
+          <p class="price">$200/year</p>
+          <p>Essential Benefits</p>
+          <button class="learn-more" data-modal="bronzeModal">Learn More</button>
+        </div>
+
+        <div class="card silver-card">
+          <h3>Silver Membership</h3>
+          <p class="price">$500/year</p>
+          <p>Enhanced Benefits</p>
+          <button class="learn-more" data-modal="silverModal">Learn More</button>
+        </div>
+
+        <div class="card gold-card">
+          <h3>Gold Membership</h3>
+          <p class="price">$1,200/year</p>
+          <p>Premium Benefits</p>
+          <button class="learn-more" data-modal="goldModal">Learn More</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="npModal" class="modal">
+    <h2>NP Membership</h2>
+    <h3>Free for Non-Profit Organizations</h3>
+    <h4>Benefits Include:</h4>
+    <ul>
+      <li>✓ Basic directory listing</li>
+      <li>✓ Access to networking events</li>
+      <li>✓ Monthly newsletter subscription</li>
+      <li>✓ Community event postings</li>
+      <li>✓ Member only resources</li>
+    </ul>
+    <button class="close-modal" aria-label="Close modal">×</button>
+  </dialog>
+
+  <dialog id="bronzeModal" class="modal">
+    <h2>Bronze Membership</h2>
+    <h3>$200 per year</h3>
+    <h4>All NP Benefits Plus:</h4>
+    <ul>
+      <li>✓ Enhanced directory listing with logo</li>
+      <li>✓ Quarterly publication feature</li>
+      <li>✓ 2 training workshops per year</li>
+      <li>✓ Social media mentions (monthly)</li>
+      <li>✓ Priority event registration</li>
+      <li>✓ Business development resources</li>
+    </ul>
+    <button class="close-modal" aria-label="Close modal">×</button>
+  </dialog>
+
+  <dialog id="silverModal" class="modal">
+    <h2>Silver Membership</h2>
+    <h3>$500 per year</h3>
+    <h4>All Bronze Benefits Plus:</h4>
+    <ul>
+      <li>✓ Premium directory placement</li>
+      <li>✓ Monthly publication feature</li>
+      <li>✓ 4 training workshops per year</li>
+      <li>✓ Weekly social media posts</li>
+      <li>✓ VIP event access</li>
+      <li>✓ 1 spotlight position on homepage per year</li>
+      <li>✓ Dedicated account support</li>
+    </ul>
+    <button class="close-modal" aria-label="Close modal">×</button>
+  </dialog>
+
+  <dialog id="goldModal" class="modal">
+    <h2>Gold Membership</h2>
+    <h3>$1,200 per year</h3>
+    <h4>All Silver Benefits Plus:</h4>
+    <ul>
+      <li>✓ Top tier directory placement</li>
+      <li>✓ Weekly publication features</li>
+      <li>✓ Unlimited training workshops</li>
+      <li>✓ Daily social media engagement</li>
+      <li>✓ All VIP events plus exclusive galas</li>
+      <li>✓ Dedicated spotlight position on homepage (yearly)</li>
+      <li>✓ Premium advertising placement</li>
+      <li>✓ Dedicated account manager</li>
+      <li>✓ Speaking opportunities at events</li>
+      <li>✓ Leadership development programs</li>
+    </ul>
+    <button class="close-modal" aria-label="Close modal">×</button>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h2>Toronto Chamber of Commerce</h2>
+        <p>55 University Ave</p>
+        <p>Toronto, ON M5J 2H7</p>
+        <p>Phone: (416) 868-6415</p>
+        <p>Email: info@chamber.ca</p>
+      </div>
+
+      <div class="footer-info">
+        <p class="student-name">Robbie Yamashita</p>
+        <p class="project-name">WDD 231 Chamber of Commerce project</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©️ <span id="currentYear"></span> Toronto Chamber of Commerce</p>
+    </div>
+  </footer>
+</body>
+</html>

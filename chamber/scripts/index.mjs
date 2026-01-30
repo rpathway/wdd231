@@ -1,31 +1,4 @@
-function initNavigation() {
-  const menuButton = document.getElementById('menuButton');
-  const navigation = document.querySelector('.navigation');
-
-  if (menuButton && navigation) {
-    menuButton.addEventListener('click', () => {
-      navigation.classList.toggle('open');
-
-      if (navigation.classList.contains('open')) {
-        menuButton.textContent = '✕';
-      } else {
-        menuButton.textContent = '☰';
-      }
-    });
-  }
-}
-
-function initFooter() {
-  const yearElement = document.getElementById('currentYear');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-
-  const modifiedElement = document.getElementById('lastModified');
-  if (modifiedElement) {
-    modifiedElement.textContent = document.lastModified;
-  }
-}
+import { initCommon } from "./common.mjs";
 
 async function loadWeather() {
   const API_KEY = ''
@@ -219,8 +192,7 @@ function displaySpotlights(members) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  initFooter();
-  initNavigation();
+  initCommon();
   // await loadWeather();
   displayDefaultWeather();
   await loadSpotlights();
