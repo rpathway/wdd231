@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="Kanto Collector Site plan for WDD231 final project, an interactive daily Pokemon collection tracker.">
+  <title>Site Plan | Kanto Collector</title>
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Site Plan: Kanto Collector</h1>
+    <p>Original 151 Pokemon Collection Tracker</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <strong>Site Name:</strong>
+      <p><b>Kanto Collector.</b> "Kanto" references the Kanto region of the Pokemon world where the original 151 Pokemon from the first Generation reside. "Collector" emphasizes the mechanic of gathering and tracking Pokemon encounters. This name is immediately recognizable to Pokemon fans while clearly communicating the site's purpose to new visitors. The name is short, memorable, and directly relates to the appeal of the original Pokemon games.</p>
+      <hr>
+      <strong>Site Purpose:</strong>
+      <p>Kanto Collector provides an interactive experience that invites nostalgia into a modern day webapp. The site offers:</p>
+      <ul>
+        <li>Daily location based Pokemon encounters using real world weather data</li>
+        <li>A personal Pokedex to track collected Pokemon from the original 151</li>
+        <li>Trainer registration system to persist collection progress via local storage</li>
+        <li>Integration with PokeAPI for authentic Pokemon data and sprites</li>
+        <li>Weather based spawn mechanics that correlate Pokemon types with local conditions</li>
+        <li>Rare "shiny" variants to add appeal and encourages daily engagement</li>
+      </ul>
+      <p>The goal is to create an engaging daily check in where users return each day to discover new Pokemon based on their geographic location and weather patterns, building a complete set over time.</p>
+      <hr>
+      <strong>Scenarios:</strong>
+      <ol>
+        <li>"I want to know which Pokemon I can encounter today based on my local weather, does the site show me what types appear in different conditions?"</li>
+        <li>"I've been collecting for a few weeks, can I see my complete Pokedex with all the Pokemon I've caught so far?"</li>
+        <li>"I just caught a shiny Pokemon, what are the odds of obtaining it?"</li>
+        <li>"I want to save my progress so I don't lose my collection, do I need to register as a trainer?"</li>
+      </ol>
+      <hr>
+
+      <strong>Color Scheme:</strong>
+      <div class="color-scheme">
+        <div>
+          <p>Primary Color (Pokeball Red):</p>
+          <span class="color-card primary-color"></span>
+          <p class="color-label">#DC0A2D<br>Headers, Call to action, Accent Elements</p>
+        </div>
+        <div>
+          <p>Secondary Color (Pikachu Yellow):</p>
+          <span class="color-card secondary-color"></span>
+          <p class="color-label">#FFCB05<br>Highlights, Borders, Active Elements</p>
+        </div>
+        <div>
+          <p>Accent Color 1 (Pokeball Blue):</p>
+          <span class="color-card accent-color-1"></span>
+          <p class="color-label">#3B4CCA<br>Links, Secondary Buttons</p>
+        </div>
+        <div>
+          <p>Accent Color 2 (Dark Gray):</p>
+          <span class="color-card accent-color-2"></span>
+          <p class="color-label">#2C2C2C<br>Body text, Footer</p>
+        </div>
+        <div>
+          <p>Accent Color 3 (Light Gray):</p>
+          <span class="color-card accent-color-3"></span>
+          <p class="color-label">#F5F5F5<br>Backgrounds, Card Backgrounds</p>
+        </div>
+      </div>
+      <p><i>This color scheme is based upon the red and white Pokeball from the Pokemon brand, Pikachu yellow, and game UI elements. These colors are recognizable to the audience while maintaining modern web design principles.</i></p>
+      <hr>
+
+      <strong>Typography:</strong>
+      <p><b>Primary Font: Segoe UI</b> (Fallbacks: Tahoma, Geneva, Verdana)</p>
+      <ul>
+        <li><b>Usage:</b> All text elements including headings, body text, buttons, and navigation to maintain consistency.</li>
+        <li><b>Why:</b> Segoe UI is a modern sans-serif font that ensures that readability is maintained across all devices. It's widely supported across various operating systems and provides an appearance that suits the "gaming" aspect of the site.</li>
+      </ul>
+      <hr>
+
+      <strong>Wireframes</strong>
+      <div class="wireframe-section">
+        <h2>Home Page (index.html)</h2>
+        <div class="wireframe-container">
+          <div class="wireframe">
+            <h3>Desktop View</h3>
+            <div class="wireframe-desktop">
+              <div class="wireframe-box wireframe-box-header">Header, Logo and Nav</div>
+              <div class="wireframe-box">Hero Section<br>"Your Daily Catch"</div>
+              <div class="wireframe-box wireframe-box-featured">Today's Pokemon Card<br>(Displayed Pokemon)<br>Current Weather Conditions<br>Catch/Info Buttons</div>
+              <div class="wireframe-box">Features Grid (4 columns)<br>| Location | Daily | Shiny | Collection |</div>
+              <div class="wireframe-box">Call to action<br>"Become a Trainer" Button</div>
+              <div class="wireframe-box wireframe-box-footer">Footer, Copyright and Links</div>
+            </div>
+          </div>
+
+          <div class="wireframe">
+            <h3>Mobile View</h3>
+            <div class="wireframe-mobile">
+              <div class="wireframe-box wireframe-box-header wireframe-box-mobile">Header<br>Hamburger Menu</div>
+              <div class="wireframe-box wireframe-box-mobile">Hero<br>"Daily Encounter"</div>
+              <div class="wireframe-box wireframe-box-featured wireframe-box-mobile">Pokemon Card<br>(Vertical aligned)<br>Current Weather<br>Catch/Info Buttons Below</div>
+              <div class="wireframe-box wireframe-box-mobile">Features<br>(Vertical aligned)</div>
+              <div class="wireframe-box wireframe-box-mobile">Call to Action</div>
+              <div class="wireframe-box wireframe-box-footer wireframe-box-mobile">Footer, Copyright and Links</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wireframe-section">
+        <h3>Pokedex Page (pokedex.html)</h3>
+        <div class="wireframe-container">
+          <div class="wireframe">
+            <h3>Desktop View</h3>
+            <div class="wireframe-desktop">
+              <div class="wireframe-box wireframe-box-header">Header, Logo and Nav</div>
+              <div class="wireframe-box">Page Title and Progress Tracker<br>"Pokedex: 23/151 Caught"</div>
+              <div class="wireframe-box wireframe-box-grid">Pokemon Grid (6-8 columns)<br>Sprite Cards<br>Locked/Unlocked State<br>Clickable for Details</div>
+              <div class="wireframe-box wireframe-box-footer">Footer, Copyright and Links</div>
+            </div>
+          </div>
+
+          <div class="wireframe">
+            <h3>Mobile View</h3>
+            <div class="wireframe-mobile">
+              <div class="wireframe-box wireframe-box-header wireframe-box-mobile">Header<br>Hamburger</div>
+              <div class="wireframe-box wireframe-box-mobile">Pokedex Title<br>Progress</div>
+              <div class="wireframe-box wireframe-box-grid wireframe-box-mobile">Grid (2-3 cols)<br>Pokemon Cards<br>(Vertical Aligned)</div>
+              <div class="wireframe-box wireframe-box-footer wireframe-box-mobile">Footer, Copyright and Links</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wireframe-section">
+        <h3>Registration Page (join.html)</h3>
+        <div class="wireframe-container">
+          <div class="wireframe">
+            <h3>Desktop View</h3>
+            <div class="wireframe-desktop">
+              <div class="wireframe-box wireframe-box-header">Header, Logo and Nav</div>
+              <div class="wireframe-box">Page Title<br>"Become a Trainer"</div>
+              <div class="wireframe-box wireframe-box-form">Registration Form<br>Name<br>Email<br>"Password"<br>Submit Button</div>
+              <div class="wireframe-box">Benefits Section<br>Why Register Info Block</div>
+              <div class="wireframe-box wireframe-box-footer">Footer, Copyright and Links</div>
+            </div>
+          </div>
+
+          <div class="wireframe">
+            <h3>Mobile View</h3>
+            <div class="wireframe-mobile">
+              <div class="wireframe-box wireframe-box-header wireframe-box-mobile">Header<br>Hamburger</div>
+              <div class="wireframe-box wireframe-box-mobile">Title</div>
+              <div class="wireframe-box wireframe-box-form wireframe-box-mobile">Form<br>(Vertical Aligned)<br>Fields<br>Submit</div>
+              <div class="wireframe-box wireframe-box-mobile">Benefits, etc.</div>
+              <div class="wireframe-box wireframe-box-footer wireframe-box-mobile">Footer, Copyright and Links</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>©️ <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
