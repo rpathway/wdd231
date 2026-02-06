@@ -826,6 +826,148 @@ main h1 {
 }
 
 
+/* Discover Page */
+
+
+.discover-intro {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  background-color: var(--card-bg);
+}
+
+.discover-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.visit-message {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  opacity: 0;
+
+  text-align: center;
+  font-weight: bold;
+
+  color: black;
+  border-radius: var(--rounded);
+  background: var(--secondary-color);
+
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+
+.visit-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visit-message.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 2rem;
+  width: 100%;
+}
+
+.attraction-card:nth-child(1) { grid-area: card1; }
+.attraction-card:nth-child(2) { grid-area: card2; }
+.attraction-card:nth-child(3) { grid-area: card3; }
+.attraction-card:nth-child(4) { grid-area: card4; }
+.attraction-card:nth-child(5) { grid-area: card5; }
+.attraction-card:nth-child(6) { grid-area: card6; }
+.attraction-card:nth-child(7) { grid-area: card7; }
+.attraction-card:nth-child(8) { grid-area: card8; }
+
+.attraction-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  justify-content: space-between;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  background-color: var(--card-bg);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.attraction-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.attraction-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+
+  color: var(--primary-color);
+}
+
+.attraction-card img {
+  display: block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  height: 200px;
+
+  border-radius: var(--rounded);
+  object-fit: cover;
+
+  transition: transform 0.3s;
+}
+
+.attraction-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.attraction-card address {
+  margin-bottom: 1rem;
+
+  font-weight: bold;
+  font-style: normal;
+
+  color: var(--accent-color2);
+}
+
+.learn-more-btn {
+  padding: 0.75rem;
+  width: 100%;
+
+  font-weight: bold;
+  
+  color: white;
+  border: none;
+  border-radius: var(--rounded);
+  background-color: var(--primary-color);
+  
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: var(--accent-color1);
+  color: black;
+}
+
+
 /* Footer */
 
 

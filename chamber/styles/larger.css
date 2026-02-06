@@ -61,7 +61,9 @@
   }
 }
 
-@media (min-width: 64rem) {
+/* Medium screen */
+
+@media screen and (min-width: 64rem) {
   header {
     display: flex;
 
@@ -124,5 +126,40 @@
     top: 2rem;
 
     align-self: start;
+  }
+
+  .attractions-grid {
+    position: relative;
+    padding: 0 2rem;
+    max-width: 1200px;
+    width: 100vw;
+    left: 50%;
+    grid-template-areas:
+      "card2 card2 card2"
+      "card1 card4 card3"
+      "card5 card5 card5"
+      "card7 card8 card6";
+
+    transform: translateX(-50%);
+  }
+}
+
+/* Large screens */
+
+@media screen and (min-width: 80rem) {
+  .grid-view {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .attractions-grid {
+    max-width: 1400px;
+    grid-template-areas:
+      "card1 card2 card2 card3"
+      "card4 card4 card5 card5"
+      "card6 card7 card7 card8";
   }
 }
