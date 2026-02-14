@@ -16,6 +16,7 @@
 }
 
 body {
+  /* Using Segoe per siteplan */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
 
