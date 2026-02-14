@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanto Collector | Catch and collect the original 151 Pokémon through daily encounters.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <meta property="og:title" content="Kanto Collector | Daily Pokemon Encounters">
+  <meta property="og:description" content="Catch and collect the original 151 Pokémon through daily encounters.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+
+  <title>Kanto Collector | Home</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles/kanto-collector.css">
+  <link rel="stylesheet" href="styles/kanto-collector-large.css">
+  <script type="module" src="scripts/main.mjs"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Kanto Collector</h1>
+        <span class="tagline">Original 151</span>
+      </div>
+      <button class="hamburger" aria-label="Mobile navigation menu button" aria-expanded="false">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="pokedex.html">Pokédex</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">Your Daily Encounter Awaits</h2>
+        <p class="hero-subtitle">Discover a new Pokemon each day based on your location and conditions</p>
+      </div>
+    </section>
+
+    <section class="daily-encounter">
+      <div class="encounter-container">
+        <div class="encounter-header">
+          <h3>Today's Discovery</h3>
+          <p class="encounter-date" id="encounterDate"></p>
+          <p class="encounter-conditions" id="encounterConditions">Getting local weather conditions...</p>
+        </div>
+
+        <div class="pokemon-card-featured" id="pokemonCard">
+          <div class="loading-state">
+            <div class="pokeball-loader"></div>
+            <p>Searching for Pokemon...</p>
+          </div>
+        </div>
+
+        <div class="encounter-actions" id="encounterActions">
+          <button class="btn-catch" id="catchBtn">
+            Catch Pokemon
+          </button>
+          <button class="btn-info" id="infoBtn">
+            <span class="btn-icon">📖</span>
+            View Details
+          </button>
+        </div>
+
+        <div class="encounter-status" id="encounterStatus"></div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4>Location-Based</h4>
+          <p>Encounters vary based on your location and local weather patterns</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏰</div>
+          <h4>Daily Discovery</h4>
+          <p>Return each day for a new chance to encounter Pokemon</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h4>Shiny Variants</h4>
+          <p>Rare shiny forms can appear with special odds</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h4>Complete Collection</h4>
+          <p>Track all 151 original Pokemon in your Pokédex</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-content">
+        <h3>Ready to Start Your Journey?</h3>
+        <p>Register as a trainer to save your progress</p>
+        <a href="join.html" class="btn-primary">Become a Trainer</a>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="pokemonModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </dialog>
+ 
+  <footer>
+    <div class="footer-container">
+      <p>©️ 2025 Kanto Collector. Educational project using <a href="https://pokeapi.co" target="_blank" rel="noopener">PokéAPI</a>.</p>
+      <p><a href="https://byupathwayworldwideprod-my.sharepoint.com/:v:/g/personal/ryamashita1_byupathway_edu/IQAJZtWdu1rTSru9M7oVZXXeAcZdLlSvEl3VTaDZhaiHSj4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wbW6gA" target="_blank">Video</a></p>
+      <hr>
+      <div class="footer-nav">
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

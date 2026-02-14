@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanto Collector | Join Kanto Collector and start your Pokemon journey.">
+  <meta name="author" content="Robbie Yamashita">
+
+  <meta property="og:title" content="Kanto Collector | Join">
+  <meta property="og:description" content="Join Kanto Collector and start your Pokemon journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+
+  <title>Kanto Collector | Join</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles/kanto-collector.css">
+  <link rel="stylesheet" href="styles/kanto-collector-large.css">
+  <script type="module" src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Kanto Collector</h1>
+        <span class="tagline">Original 151</span>
+      </div>
+      <button class="hamburger" aria-label="Mobile navigation menu button" aria-expanded="false">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pokedex.html">Pokédex</a></li>
+          <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="join-container">
+      <div class="join-header">
+        <h2>Become a Trainer</h2>
+        <p>Start your Pokemon collecting journey today</p>
+      </div>
+
+      <div class="registration-form">
+        <div class="form-message" id="formMessage"></div>
+        <form id="registrationForm" action="thankyou.html" method="GET">
+
+          <div class="form-section">
+            <label for="trainerName">Trainer Name</label>
+            <input type="text" id="trainerName" name="trainerName" autocomplete="username" minlength="3" maxlength="20" placeholder="Lorelei" required>
+          </div>
+          <div class="form-section">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="trainer@example.com" required>
+          </div>
+          <div class="form-section">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="new-password" minlength="6" placeholder="Create a password" required>
+          </div>
+          <div class="form-section">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" placeholder="Confirm your password" required>
+          </div>
+          <div class="form-section checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+
+          <input type="submit" class="btn-submit" value="Register Now"></input>
+        </form>
+      </div>
+
+      <div class="benefits-section">
+        <h3>Why Register?</h3>
+        <ul>
+          <li>Save your Pokemon collection permanently</li>
+          <li>Track your progress across all 151 Pokemon</li>
+          <li>Catch and keep daily encounters</li>
+          <li>Collect rare shiny variants</li>
+          <li>Complete your Pokédex</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>©️ 2025 Kanto Collector. Educational project using <a href="https://pokeapi.co" target="_blank" rel="noopener">PokéAPI</a>.</p>
+      <p><a href="https://byupathwayworldwideprod-my.sharepoint.com/:v:/g/personal/ryamashita1_byupathway_edu/IQAJZtWdu1rTSru9M7oVZXXeAcZdLlSvEl3VTaDZhaiHSj4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wbW6gA" target="_blank">Video</a></p>
+      <hr>
+      <div class="footer-nav">
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
